@@ -1,0 +1,22 @@
+# create and explore a set of colors
+colors = {"red", "green", "blue", "yellow"}
+print(colors)
+print("\n")
+
+# add and remove elements
+colors.add("purple")
+colors.discard("green")
+print(colors)
+
+# set operations
+primary_colors = {"red", "blue", "yellow"}
+# Find and print the colors that are in colors but not in primary_colors.
+print("Colors not in primary_colors:", colors - primary_colors)
+# Find and print the colors that are in both colors and primary_colors.
+print("Colors in both sets:", colors & primary_colors)
+
+# check membership
+if "orange" in colors:
+    print("orange is in the set of colors")
+else:
+    print("orange is not in the set of colors")
